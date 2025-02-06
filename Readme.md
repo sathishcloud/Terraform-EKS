@@ -11,7 +11,7 @@ Ensure you replace the bucket name in your `provider.tf` and the key name in you
 # Use `aws configure` to set up these credentials on your local machine.
 ```
 
-### Step 4: Create an EC2 VM and Connect to It Using MobaXterm
+### Step 4: Create an EC2 VM and Connect 
 This step involves creating an EC2 instance in the AWS Management Console and connecting to it using SSH or any preferred method.
 
 ### Step 5: Install AWS CLI and Terraform
