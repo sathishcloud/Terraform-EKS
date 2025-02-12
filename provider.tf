@@ -6,7 +6,7 @@ provider "aws" {
 # configure backend
 terraform {
   backend "s3" {
-    bucket         = "bucketforeksterraform"
+    bucket         = "mybucket12feb"
     key            = "eks.terraform.tfstate"
     region         = "ap-south-1"
     
