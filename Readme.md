@@ -59,6 +59,10 @@ curl -O https://s3.us-west-2.amazonaws.com/amazon-eks/1.29.0/2024-01-04/bin/linu
 chmod +x ./kubectl
 mkdir -p $HOME/bin && cp ./kubectl $HOME/bin/kubectl && export PATH=$HOME/bin:$PATH
 ```
+## if you want to connect EKS cluster after you create your eks service through terraform apply below command
+
+aws eks update-kubeconfig --region ap-south-1 --name AWS-EKS
+
 
 ### Step 11: Configure kubectl to Connect to the EKS Cluster
 ```bash
