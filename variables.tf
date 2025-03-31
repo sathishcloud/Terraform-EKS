@@ -8,8 +8,10 @@ variable "instance_size" {
   type = string
 }
 
-# Region
-variable "region" {}
+#region
+variable "region" {
+  type = string
+}
 
 # SSH Access
 variable "ssh_access" {
