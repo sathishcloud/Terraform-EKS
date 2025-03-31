@@ -24,9 +24,13 @@ sudo ./aws/install
 aws configure
 
 # Terraform Installation
+cd /opt
 wget -O- https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
 echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
 sudo apt update && sudo apt install terraform
+to start terrafrom 
+cp ./terraform /usr/local/sbin
+terraform --version
 ```
 
 ### Step 6: Run `aws configure` and Provide Access Key ID, Secret Access Key, and Region
